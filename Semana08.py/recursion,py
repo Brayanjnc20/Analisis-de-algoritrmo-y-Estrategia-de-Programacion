@@ -1,0 +1,27 @@
+
+#Recursion hacia adelante
+def woo(n):
+    if n == 0:
+        return ""
+    else:
+        return woo(n-1)+ "!"
+
+#Comienza en 0 (Recursion havia atras)
+def woo3(n, x=0):
+    if n == n:
+        return acc
+    else:
+        return woo2(n, x+1)+ "!"
+
+
+
+
+######### del video
+#Recursion de cola 
+def woo2(n, acc=""):
+    if n == 0:
+        return acc
+    else:
+        return woo2(n-1, acc+"!")            
+
+print(woo(10000))         
