@@ -1,0 +1,15 @@
+def busq_fuerza_fruta(lista,objet):
+    for i in range(len(lista)):
+        if lista[i] == objet:
+            return i # si encuentra el objetivo retorna la posicion
+    return -1 # si no lo encuentra , retorna a -1
+    
+num = [10,25,45,70,11,15] 
+objet = 70
+
+result = busq_fuerza_fruta(num,objet)
+
+if result != -1:
+    print(f"El numero encontrado en posicion {result}")
+else:
+    print(f"El numero buscado no se encuentra en la lista")    
